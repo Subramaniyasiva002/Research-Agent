@@ -43,17 +43,7 @@ Operates autonomously → scheduled execution without human input
 
 Memory and self-learning are optional enhancements, not requirements.
 
-🏗️ System Architecture
-GitHub Actions (Every 48 Hours)
-            |
-            v
-      LangGraph StateGraph
-            |
-------------------------------------------------
-|                |                |            |
-v                v                v            v
-Search Agent   Summarizer Agent  Categorizer  Report Agent
-(Tavily API)   (OpenRouter LLM)     (LLM)     (Discord Webhook)
+
 
 🔄 Multi-Agent Workflow
 1️⃣ Search Agent
@@ -78,16 +68,6 @@ Generates a Markdown digest
 
 Sends the digest to Discord
 
-📁 Project Structure
-Research_Agent/
-│
-├── main.py                  # LangGraph workflow definition
-├── agents.py                # Search, summarize, categorize, report agents
-├── tavily_search.py         # Tavily API integration
-├── mailer.py                # Discord webhook notifier
-├── run_agent.py             # Entry point for automation
-├── requirements.txt         # Dependencies
-└── daily_research_digest.md # Auto-generated output
 
 ⚙️ Tech Stack
 Component	Technology
@@ -167,3 +147,4 @@ Telegram / Slack integration
 Web dashboard (Streamlit / Vue)
 
 Self-reflection & agent planning loop
+
